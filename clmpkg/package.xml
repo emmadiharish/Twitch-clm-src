@@ -133,6 +133,13 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Apttus_Approval_User</members>
+        <members>Apttus_CLM_Contract_Manager_Template_Admin</members>
+        <members>Apttus_CLM_Read_Only</members>
+        <members>Apttus_CLM_Requestor</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
         <members>Twitch_Legal_Queue</members>
         <name>Queue</name>
     </types>
