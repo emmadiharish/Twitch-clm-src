@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Agreement_Legal_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Agreement - Legal Edit</label>
+        <sharedTo>
+            <role>Legal</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_with_Partnerships</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share with Partnerships</label>
+        <sharedTo>
+            <roleAndSubordinates>Partnerships</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object is used for Content License agreements, which can have one-to-many sponsorships associated to it.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreement</label>
+        <referenceTo>Apttus__APTS_Agreement__c</referenceTo>
+        <relationshipLabel>Agreement Sponsorships</relationshipLabel>
+        <relationshipName>Agreement_Sponsorships</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CustomSponsorshipPaymentFrequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Sponsorship Payment Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IsBlankCheck__c</fullName>
+        <description>Do not delete. Used by Next Steps Component</description>
+        <externalId>false</externalId>
+        <formula>OR(
+   AND(ISPICKVAL(SponsorshipPaymentFrequency__c, &quot;Custom&quot;), ISBLANK(CustomSponsorshipPaymentFrequency__c)),
+   ISBLANK(SponsorshipAmount__c) ,
+   ISBLANK(SponsorshipDate__c) ,
+   ISBLANK(TEXT(SponsorshipPaymentFrequency__c)
+   )
+  )</formula>
+        <label>IsBlankCheck</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SponsorshipAmount__c</fullName>
+        <description>Field is used by Content Acquisition Team and is associated to the Sponsorship Fee Payments process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter a currency amount.</inlineHelpText>
+        <label>Sponsorship ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SponsorshipDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Sponsorship Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SponsorshipPaymentFrequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Sponsorship Payment Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One Time</fullName>
+                    <default>false</default>
+                    <label>One Time</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Yearly</fullName>
+                    <default>false</default>
+                    <label>Yearly</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Agreement Sponsorship</label>
+    <nameField>
+        <displayFormat>AS-{00000}</displayFormat>
+        <label>Agreement Sponsorship Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Agreement Sponsorships</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>CustomSponsorshipPaymentFrequency</fullName>
+        <active>true</active>
+        <description>Validates that the Custom Sponsorship Payment Frequency field always has a value, if the Sponsorship Payment Frequency field value equals &quot;Custom&quot;.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(SponsorshipPaymentFrequency__c,&quot;Custom&quot;),
+ISBLANK(CustomSponsorshipPaymentFrequency__c)
+)</errorConditionFormula>
+        <errorDisplayField>CustomSponsorshipPaymentFrequency__c</errorDisplayField>
+        <errorMessage>Since Sponsorship Payment Frequency is &apos;Custom&apos;, please enter text into the Custom Sponsorship Payment Frequency field.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

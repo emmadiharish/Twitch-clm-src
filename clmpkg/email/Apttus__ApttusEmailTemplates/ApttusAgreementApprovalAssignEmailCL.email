@@ -1,0 +1,77 @@
+<messaging:emailTemplate subject="{!$Label.apttus_approval__approvalrequestforagreement} '{!relatedTo.Apttus_Approval__Related_Agreement__r.Name}' {!$Label.apttus_approval__hasbeensubmittedforapproval}" 
+                         recipientType="User" 
+                         relatedToType="Apttus_Approval__Approval_Request__c"
+                         language="{!recipient.LanguageLocaleKey}"
+                         replyto="approvalreplyservice@26qs40r6sa074oaq74vhswqfffo6qoiocmpdw00b52sc92hs6o.0u-p7quau.cs97.apex.sandbox.salesforce.com">
+                         
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <!--  required fields -->
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Object_Type__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Object_Id__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Approval_Status__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Date__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Assigned_To_Name__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__PrevAssignedToName__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Request_Comments__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Approver_Comments__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Status_Category__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Status__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Contract_Start_Date__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Contract_End_Date__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Total_Contract_Value__c}" rendered="false" />                  
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Name}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Account__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Account__r.Name}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Owner.Name}" rendered="false" /> 
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__Description__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__Related_Agreement__r.Apttus__FF_Agreement_Number__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__HasDelegateApprover__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__DelegateApprover__c}" rendered="false" />
+                <apex:outputText value="{!relatedTo.Apttus_Approval__DelegateApprover__r.Name}" rendered="false" />    
+                 
+                Dear {!recipient.Name}:
+                <br/><br/>
+                <apex:outputText value="{!$Label.apttus_approval__approvalactionlinkfordelegate & ' ' & relatedTo.Apttus_Approval__Assigned_To_Name__c & '.'}" 
+                                 escape="true" 
+                                 rendered="{!relatedTo.Apttus_Approval__HasDelegateApprover__c &&
+                                            (recipient.Name == relatedTo.Apttus_Approval__DelegateApprover__r.Name)}" />
+                {!$Label.apttus_approval__approvalrequestforagreement} '{!relatedTo.Apttus_Approval__Related_Agreement__r.Name}' {!$Label.apttus_approval__hasbeensubmittedforapproval}.
+                <br/>
+                <br/>
+                Deal Memo URL:  {!relatedTo.Apttus_Approval__Related_Agreement__r.DealMemoURL__c} <br/>
+                Total Estimated Cost:  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.TotalEstimatedCost__c}"/></apex:outputText></span><br/>
+                COI:  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.CumulativeOperatingIncome__c}"/></apex:outputText></span><br/>
+                Total Content Cost / kMW:  <span ><apex:outputText value="{0, number, '$'###,##0.000}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.TotalContentCostkMW__c}"/></apex:outputText></span><br/>
+                2018 Total Content Cost:  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.X2018TotalContentCost__c}"/></apex:outputText></span><br/>
+                2019 Total Content Cost:  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.X2019TotalContentCost__c}"/></apex:outputText></span><br/>
+                Partner Tier:  {!relatedTo.Apttus_Approval__Related_Agreement__r.PartnerTier__c}<br/>
+                Total Partner Payout (Cumulative):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.TotalPartnerPayoutCumulative__c}"/></apex:outputText></span><br/>
+                Gross Revenue (Cumulative):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.GrossRevenueCumulative__c}"/></apex:outputText></span><br/>
+                Net Revenue (Cumulative):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.NetRevenueCumulative__c}"/></apex:outputText></span><br/>
+                Total Budgeted HW (Cumulative):  <span ><apex:outputText value="{0, number, ###,##0}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.TotalBudgetedHWCumulative__c}"/></apex:outputText></span><br/>
+                Budgeted Live HW (Cumulative):  <span ><apex:outputText value="{0, number, ###,##0}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.BudgetedLiveHWCumulative__c}"/></apex:outputText></span><br/>
+                Budgeted VOD HW (Cumulative):  <span ><apex:outputText value="{0, number, ###,##0}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.BudgetedVODHWCumulative__c}"/></apex:outputText></span><br/>
+                Budgeted CCVs (Average):  <span ><apex:outputText value="{0, number, ###,##0}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.BudgetedCCVsAverage__c}"/></apex:outputText></span><br/>
+                Advertising Revenue Terms:  {!relatedTo.Apttus_Approval__Related_Agreement__r.AdvertisingRevenueTerms__c}<br/>
+                Subscription Revenue Terms:  {!relatedTo.Apttus_Approval__Related_Agreement__r.SubscriptionRevenueTerms__c}<br/>
+                Bits Revenue Terms:  {!relatedTo.Apttus_Approval__Related_Agreement__r.BitsRevenueTerms__c}<br/>
+                Fuel Revenue Terms:  {!relatedTo.Apttus_Approval__Related_Agreement__r.FuelRevenueTerms__c}<br/>
+                Live Exclusivity:  {!relatedTo.Apttus_Approval__Related_Agreement__r.LiveExclusivity__c}<br/>
+                VOD Exclusivity:  {!relatedTo.Apttus_Approval__Related_Agreement__r.VODExclusivity__c}<br/>
+                Ad Density Requirement Minimum Hours:  <span ><apex:outputText value="{0, number, ###,##0}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.AdDensityRequirementMinHr__c}"/></apex:outputText></span><br/>
+                Minimum Guarantee ($):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.MinimumGuaranteeAmount__c}"/></apex:outputText></span><br/>
+                License Fee ($):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.LicenseFeeAmount__c}"/></apex:outputText></span><br/>
+                One-Time Bonus Payment ($):  <span ><apex:outputText value="{0, number, '$'###,##0.00}"><apex:param value="{!relatedTo.Apttus_Approval__Related_Agreement__r.OneTimeBonusPayment__c}"/></apex:outputText></span><br/>
+                Incentive Structure:  {!relatedTo.Apttus_Approval__Related_Agreement__r.IncentiveStructure__c}<br/>
+                Pro-Rated Incentive:  {!relatedTo.Apttus_Approval__Related_Agreement__r.ProRatedIncentive__c}<br/>
+                Other Custom Terms / Requirements:  {!relatedTo.Apttus_Approval__Related_Agreement__r.OtherCustomTermsRequirements__c}<br/>
+                <br/>
+                <Apttus_Approval:AgreementApprovalEmail ApprovalRequestSO="{!relatedTo}" ApprovalRecipientSO="{!recipient}" />
+                <br/>
+    
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

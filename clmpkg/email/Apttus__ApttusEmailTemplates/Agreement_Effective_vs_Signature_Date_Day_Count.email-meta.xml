@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for 60 day difference in signature date field values</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Agreement - Effective vs Signature Date - Day Count</name>
+    <style>none</style>
+    <subject>Agreement {!Apttus__APTS_Agreement__c.Name} - Effective vs Signature Date - 60 Day Old Notification</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

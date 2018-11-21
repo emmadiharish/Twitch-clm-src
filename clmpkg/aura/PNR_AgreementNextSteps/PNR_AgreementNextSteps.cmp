@@ -1,0 +1,323 @@
+<aura:component controller="PNR_OpportunitiesController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="eligibleForApproval" type="Boolean"/>
+    <aura:attribute name="validForApproval" type="Boolean"/>
+    <aura:attribute name="inApprovalProcess" type="Boolean"/>
+    <aura:attribute name="eligibleForContract" type="Boolean"/>
+    <aura:attribute name="validForContract" type="Boolean"/>
+    <aura:attribute name="inContractProcess" type="Boolean"/>
+
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      mode="VIEW"
+                      fields="Apttus__Related_Opportunity__r.StageName,
+                                Apttus__Related_Opportunity__r.Owner.DealMemoMinimumRequirement__c,
+                                Apttus__Related_Opportunity__r.Owner.DealModelMinimumRequirement__c,
+                                Apttus__Related_Opportunity__c,                               
+                                ContentApprovalDate__c,
+                                RequestSubmissionDate__c,
+                                Id,
+                                ContentApprovalSubmitted__c,
+                                DealMemoURL__c, 
+                                DealModelUploaded__c,
+                                Apttus__Status__c,
+                                TotalEstimatedCost__c,
+                                CumulativeOperatingIncome__c,
+                                TotalContentCostkMW__c, 
+                                X2018TotalContentCost__c, 
+                                X2019TotalContentCost__c, 
+                                BudgetedCCVsAverage__c, 
+                                BudgetedLiveHWCumulative__c, 
+                                BudgetedVODHWCumulative__c,  
+                                GrossRevenueCumulative__c, 
+                                NetRevenueCumulative__c, 
+                                TotalBudgetedHWCumulative__c, 
+                             
+                                TotalPartnerPayoutCumulative__c, 
+                                Incentives__c, 
+                                AdvertisingRevenueTerms__c,
+                                CustomAdvertisingRevenueTerms__c,
+                                SubscriptionRevenueTerms__c,
+                                CustomSubscriptionRevenueTerms__c,
+                                BitsRevenueTerms__c,
+                                FuelRevenueTerms__c,
+                                LiveExclusivity__c,
+                                CustomLiveExclusivity__c,
+                                VODExclusivity__c,
+                                CustomVODExclusivity__c,
+                                AdDensityRequirementMinHr__c, 
+                                CustomAdDensityRequirement__c,
+                                MinimumGuaranteeAmount__c, 
+                                LicenseFeeAmount__c, 
+                                OtherCustomTermsRequirements__c,
+                                Apttus__Related_Opportunity__r.NumberChannels__c,
+                                LegalEntityType__c, 
+                                CompanyName__c,
+                                SignatoryName__c,
+                                MailingStreet__c,
+                                MailingCity__c,
+                                MailingState__c,
+                                MailingPostalCode__c,
+                                MailingCountry__c,
+                                EffectiveDate__c,
+                                CustomTermLength__c,
+                                Apttus__Auto_Renewal__c,
+                                Apttus__Status__c,
+                                Apttus__Related_Opportunity__r.IsClosed,
+                                Incomplete_Sponsorships_Count__c,
+                                No_of_Agreement_Sponsorships__c ,
+                                Total_Sponsorship_Count__c"
+                             
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      targetError="{!v.recordError}"
+                      recordUpdated="{!c.handleRecordUpdated}"/>
+ <!-- Apttus__APTS_Agreement__.Agreement_Sponsorships.CustomSponsorshipPaymentFrequency__c -->
+    <!-- Do not show for closed deals -->
+    <aura:if isTrue="{! !v.simpleRecord.IsClosed}">
+        <lightning:card variant="base"
+                        iconName="custom:custom30">
+            <aura:set attribute="title">
+                Next Steps
+            </aura:set>
+
+            <div class="slds-p-around_medium">
+
+                <aura:if isTrue="{!v.simpleRecord.ContractType__c == 'EULA'}">
+                 <!--   <aura:if isTrue="{!and(v.simpleRecord.Apttus__Related_Opportunity__r.NumberChannels__c != null,v.simpleRecord.Apttus__Related_Opportunity__r.NumberChannels__c == 0)}"> -->
+                          <aura:if isTrue="{!v.simpleRecord.Apttus__Related_Opportunity__r.NumberChannels__c == 0}">
+                        <p>
+                            <strong>The following fields are required for Signature:</strong>
+                        </p>
+                        <ul>
+                            <li>Twitch Channel(s)</li>
+                        </ul>
+                    </aura:if>
+                    <aura:if isTrue="{!v.simpleRecord.Apttus__Related_Opportunity__r.NumberChannels__c > 0}">
+                        <p>Move Stage to <strong>Signed</strong> when Partnered. No need submit for Approval or Legal for EULA.</p>
+                    </aura:if>
+                </aura:if>
+
+                <aura:if isTrue="{!and(v.eligibleForApproval, v.validForApproval)}">
+                    <p>Move Stage to <strong>Approval</strong> to submit for Content Approval.</p>
+                </aura:if>
+                <aura:if isTrue="{!and(v.eligibleForApproval, not(v.validForApproval))}">
+                    <p>
+                        <strong>Your deal is ready for approval</strong>
+                    </p>
+                    <ul>
+                        <aura:if isTrue="{!v.simpleRecord.TotalEstimatedCost__c == null}">
+                            <li>Total Estimated Cost</li>
+                        </aura:if>
+                        <aura:if isTrue="{!v.simpleRecord.CumulativeOperatingIncome__c == null}">
+                            <li>Cumulative Operating Income</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.TotalContentCostkMW__c == null)}">
+                            <li>Total Content Cost / kMW</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.X2018TotalContentCost__c == null)}">
+                            <li>2018 Total Content Cost</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.X2018TotalContentCost__c == null)}">
+                            <li>2019 Total Content Cost</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.BudgetedCCVsAverage__c == null)}">
+                            <li>Budgeted CCVs</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.BudgetedLiveHWCumulative__c == null)}">
+                            <li>Budgeted Live HW</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.BudgetedVODHWCumulative__c	== null)}">
+                            <li>Budgeted VOD HW</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.GrossRevenueCumulative__c == null)}">
+                            <li>Gross Revenue</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.NetRevenueCumulative__c == null)}">
+                            <li>Net Revenue</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.TotalBudgetedHWCumulative__c == null)}">
+                            <li>Total Budgeted HW</li>
+                        </aura:if>
+                      <!--  <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.PartnerTier__c == null)}">
+                            <li>Partner Tier</li>
+                        </aura:if> -->
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.TotalPartnerPayoutCumulative__c == null)}">
+                            <li>Total Partner Payout</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.Incentives__c == null)}">
+                            <li>Incentives</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.DealMemoURL__c == null, v.simpleRecord.TotalEstimatedCost__c >= v.simpleRecord.Apttus__Related_Opportunity__r.Owner.DealMemoMinimumRequirement__c)}">
+                            <li>Deal Memo URL</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.DealModelUploaded__c != 'Yes', v.simpleRecord.TotalEstimatedCost__c >= v.simpleRecord.Apttus__Related_Opportunity__r.Owner.DealModelMinimumRequirement__c)}">
+                            <li>Deal Model Upload</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.LiveExclusivity__c == null)}">
+                            <li>Live Exclusivity</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.LiveExclusivity__c == 'Custom', v.simpleRecord.CustomLiveExclusivity__c == null)}">
+                                    <li>Custom Live Exclusivity</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.VODExclusivity__c == null)}">
+                            <li>VOD Exclusivity</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.VODExclusivity__c == 'Custom', v.simpleRecord.CustomVODExclusivity__c == null)}">
+                                    <li>Custom VOD Exclusivity</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.AdDensityRequirementMinHr__c == null)}">
+                            <li>Ad Density Requirement</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.AdDensityRequirementMinHr__c == 'Custom', v.simpleRecord.CustomAdDensityRequirement__c == null)}">
+                                    <li>Custom Ad Density Requirement</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.AdvertisingRevenueTerms__c == null)}">
+                            <li>Advertising Revenue Terms</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.AdvertisingRevenueTerms__c == 'Custom', v.simpleRecord.CustomAdvertisingRevenueTerms__c == null)}">
+                                    <li>Custom Advertising Revenue Terms</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.SubscriptionRevenueTerms__c == null)}">
+                            <li>Subscription Revenue Terms</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.SubscriptionRevenueTerms__c == 'Custom', v.simpleRecord.CustomSubscriptionRevenueTerms__c == null)}">
+                                    <li>Custom Subscription Revenue Terms</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.BitsRevenueTerms__c == null)}">
+                            <li>Bits Revenue Terms</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.BitsRevenueTerms__c == 'Custom', v.simpleRecord.CustomBitsRevenueTerms__c == null)}">
+                                    <li>Custom Bits Revenue Terms</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.FuelRevenueTerms__c == null)}">
+                            <li>Fuel Revenue Terms</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.FuelRevenueTerms__c == 'Custom', v.simpleRecord.CustomFuelRevenueTerms__c == null)}">
+                                    <li>Custom Fuel Revenue Terms</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MinimumGuaranteeAmount__c == null)}">
+                            <li>Minimum Guarantee</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.LicenseFeeAmount__c == null)}">
+                            <li>License Fee</li>
+                        </aura:if>
+                        <!-- Incomplete Sponsorships Check -->
+                        <aura:if isTrue="{!and(v.simpleRecord.Incomplete_Sponsorships_Count__c!=null,v.simpleRecord.Incomplete_Sponsorships_Count__c > 0)}">
+                            <li><b>Sponsorship Incomplete</b></li>
+                		</aura:if>
+
+                    </ul>
+                </aura:if>
+
+                <aura:if isTrue="{!v.inApprovalProcess}">
+                    <p>
+                        Awaiting Approval by Content Approver(s).
+                    </p>
+                </aura:if>
+
+                <aura:if isTrue="{!and(v.eligibleForContract, v.validForContract)}">
+                    <p>Move Stage to <strong>Contract</strong> to submit to Legal.</p>
+                </aura:if>
+                <aura:if isTrue="{!and(v.eligibleForContract, not(v.validForContract))}">
+                    <p>
+                        <strong>The following fields are required for Contract Request submission:</strong>
+                    </p>
+                    <ul>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.Apttus__Related_Opportunity__r.NumberChannels__c == 0)}">
+                            <li>Twitch Channel(s)</li>
+                        </aura:if>
+                        <aura:if isTrue="{!v.simpleRecord.LegalEntityType__c == null}">
+                            <li>Legal Entity Type</li>
+
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.LegalEntityType__c != 'Individual', v.simpleRecord.CompanyName__c == null)}">
+                                    <li>Company Name</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!v.simpleRecord.SignatoryName__c == null}">
+                            <li>Signatory Name</li>
+                        </aura:if>
+                        <aura:if isTrue="{!v.simpleRecord.SignatoryEmail__c == null}">
+                            <li>Signatory Email</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MailingStreet__c == null)}">
+                            <li>Mailing Street</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MailingCity__c == null)}">
+                            <li>Mailing City</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MailingState__c == null)}">
+                            <li>Mailing State</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MailingPostalCode__c == null)}">
+                            <li>Mailing Postal Code</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.MailingCountry__c == null)}">
+                            <li>Mailing Country</li>
+                        </aura:if>
+                        <aura:if isTrue="{!v.simpleRecord.EffectiveDate__c == null}">
+                            <li>Effective Date</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.CustomTermLength__c == null)}">
+                            <li>Custom Term Length</li>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.Apttus__Auto_Renewal__c == null)}">
+                            <li>Auto Renew</li>
+                        </aura:if>
+                        <!--aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.HoursWatchedTerminationClause__c == null)}">
+                            <li>HW Termination Clause</li>
+                        </aura:if-->
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c != 'Amendment', v.simpleRecord.NetOfInvoice__c == null)}">
+                            <li>Net of Invoice</li>
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!and(v.simpleRecord.NetOfInvoice__c == 'Custom', v.simpleRecord.CustomNetOfInvoice__c == null)}">
+                                    <li>Custom Net of Invoice</li>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.simpleRecord.ContractType__c == 'Amendment', v.simpleRecord.OtherCustomTermsRequirements__c == null)}">
+                            <li>Other Custom Terms / Requirements</li>
+                        </aura:if>
+                    </ul>
+                </aura:if>
+
+                <aura:if isTrue="{!v.inContractProcess}">
+                    <p>
+                        <strong>Contract Status:</strong>&nbsp;
+                        <ui:outputText value="{!v.simpleRecord.Status__c}"/>
+                    </p>
+                </aura:if>
+                
+                <!-- Display Lightning Data Service errors, if any -->
+                <aura:if isTrue="{!not(empty(v.recordError))}">
+                    <div class="recordError">
+                        <ui:message title="Error" severity="error" closable="true">
+                                {!v.recordError}
+                        </ui:message>
+                    </div>
+                </aura:if>
+
+            </div>
+        </lightning:card>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object is used for Content License agreements, which can have one-to-many channels associated to it.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>Channel_Revision_History</fullName>
+        <description>PNR_AgreementService.cls</description>
+        <displayedFields>
+            <field>ChannelID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ChannelName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Agreement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Channel Revision History</label>
+    </fieldSets>
+    <fields>
+        <fullName>Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreement</label>
+        <referenceTo>Apttus__APTS_Agreement__c</referenceTo>
+        <relationshipLabel>Agreement Channels</relationshipLabel>
+        <relationshipName>Agreement_Channels</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ChannelCPM__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel CPM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard (3.50/3.50/50%)</fullName>
+                    <default>false</default>
+                    <label>Standard (3.50/3.50/50%)</label>
+                </value>
+                <value>
+                    <fullName>Premium (5.00/3.50/50%)</fullName>
+                    <default>false</default>
+                    <label>Premium (5.00/3.50/50%)</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ChannelEmail__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the email address of the user in the channel.</inlineHelpText>
+        <label>Channel Email</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChannelID__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChannelName__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Channel Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Agreement Channels</relationshipLabel>
+        <relationshipName>Agreement_Channels</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Channel_Username__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel Username</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomChannelCPM__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Channel CPM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DataMigrationID__c</fullName>
+        <externalId>true</externalId>
+        <label>Data Migration ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EffectiveDateFrom__c</fullName>
+        <externalId>false</externalId>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveDateTerm__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISNULL(EffectiveDateTo__c)), 
+TEXT(MONTH(EffectiveDateFrom__c))+&quot;/&quot; +TEXT(DAY(EffectiveDateFrom__c))+&quot;/&quot; +TEXT(YEAR(EffectiveDateFrom__c)) &amp; &quot; - &quot; &amp; TEXT(MONTH(EffectiveDateTo__c))+&quot;/&quot; +TEXT(DAY(EffectiveDateTo__c))+&quot;/&quot; +TEXT(YEAR(EffectiveDateTo__c)), 
+
+IF(NOT(ISNULL(EffectiveDateFrom__c)), 
+TEXT(MONTH(EffectiveDateFrom__c))+&quot;/&quot; +TEXT(DAY(EffectiveDateFrom__c))+&quot;/&quot; +TEXT(YEAR(EffectiveDateFrom__c)), 
+
+&apos;&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Effective Date/Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EffectiveDateTo__c</fullName>
+        <externalId>false</externalId>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_Streaming_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Streaming (Hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Agreement Channel</label>
+    <nameField>
+        <displayFormat>AC-{00000}</displayFormat>
+        <label>Agreement Channel Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Agreement Channels</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>CannotUpdateAgreementChannels</fullName>
+        <active>true</active>
+        <description>Validates a user is unable to make changes to an Agreement Channel record when the Agreement record is fully-executed.</description>
+        <errorConditionFormula>AND(
+!$Permission.CanEditAgreementChannel,
+Agreement__r.RecordType.Name = &apos;Twitch - Content License&apos;,
+ISPICKVAL(Agreement__r.Apttus__Status__c, &apos;Activated&apos;),
+ISPICKVAL(Agreement__r.Apttus_Approval__Approval_Status__c, &apos;Approved&apos;)
+)</errorConditionFormula>
+        <errorMessage>Since the Agreement record has been fully-executed, no changes are allowed to the Agreement Channel record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ChannelIDNumberValidation</fullName>
+        <active>true</active>
+        <description>Validation rule assures that only a number value will be entered.</description>
+        <errorConditionFormula>NOT(ISNUMBER(ChannelID__c))</errorConditionFormula>
+        <errorDisplayField>ChannelID__c</errorDisplayField>
+        <errorMessage>Channel ID&apos;s do not contain alpha text. Please enter in a number value to this field, then click the &apos;Save&apos; button.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CustomChannelCPM</fullName>
+        <active>true</active>
+        <description>Validates that the Custom Channel CPM field always has a value, if the Channel CPM field value equals &quot;Custom&quot;.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(ChannelCPM__c,&quot;Custom&quot;),
+ISBLANK(CustomChannelCPM__c)
+)</errorConditionFormula>
+        <errorDisplayField>CustomChannelCPM__c</errorDisplayField>
+        <errorMessage>Since Channel CPM is &apos;Custom&apos;, please enter text into the Custom Channel CPM field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EffectiveDateFromLessThanTo</fullName>
+        <active>true</active>
+        <description>Validation rule assures that the &quot;Effective Date - From&quot; field is less than the &quot;Effective Date - To&quot; field.</description>
+        <errorConditionFormula>AND(
+OR(ISNEW(),OR(ISCHANGED(EffectiveDateFrom__c),ISCHANGED(EffectiveDateTo__c))), 
+EffectiveDateFrom__c &gt; EffectiveDateTo__c)</errorConditionFormula>
+        <errorDisplayField>EffectiveDateFrom__c</errorDisplayField>
+        <errorMessage>The &quot;Effective Date - From&quot; field must have a date prior to the &quot;Effective Date - To&quot; field. Please fix the error, then click the &apos;Save&apos; button.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

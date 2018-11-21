@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AGREEMENT_CATEGORY_IN_EFFECT</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DO NOT TRANSLATE. This is being used  in Code/Trigger.</shortDescription>
+        <value>In Effect</value>
+    </labels>
+    <labels>
+        <fullName>AGREEMENT_REC_TYPE_TWITCH_CL</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DO NOT TRANSLATE. This is being used  in Code/Trigger.</shortDescription>
+        <value>Twitch - Content License</value>
+    </labels>
+    <labels>
+        <fullName>AGREEMENT_STATUS_ACTIVATED</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DO NOT TRANSLATE. This is being used  in Code/Trigger.</shortDescription>
+        <value>Activated</value>
+    </labels>
+    <labels>
+        <fullName>ONE_ACTIVE_AGREEMENT_ERROR</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error to show when there are more than 2 active agreement on an Opportunity.</shortDescription>
+        <value>Only One Active Agreement record can be associated to an Opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>OPP_IS_CA_REC_TYPE</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DO NOT TRANSLATE. This is being used  in Code/Trigger.</shortDescription>
+        <value>Incentive / Sponsorship - Content Acquisition</value>
+    </labels>
+    <labels>
+        <fullName>OPP_STAGE_SIGNED</fullName>
+        <categories>Twitch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DO NOT TRANSLATE. This is being used  in Code/Trigger.</shortDescription>
+        <value>Signed</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_add</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button label for adding an additional item</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_hide_filters</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hide Filters</shortDescription>
+        <value>Hide Filters</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_login_to_twitter</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button label for logging into Twitter</shortDescription>
+        <value>Login to Twitter</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_reload_page</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button label for reloading a page</shortDescription>
+        <value>Refresh</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button label for removal an item</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_search</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>pnr_button_show_filters</fullName>
+        <categories>button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show Filters</shortDescription>
+        <value>Show Filters</value>
+    </labels>
+    <labels>
+        <fullName>pnr_error_cannot_add</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when there is an error adding data</shortDescription>
+        <value>Cannot add {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_error_cannot_display</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when there is an error displaying data</shortDescription>
+        <value>Cannot display {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_error_cannot_remove</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when there is an error removing data</shortDescription>
+        <value>Cannot remove {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_error_streamers_only</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when functionality is accessed that only supports Streamer records</shortDescription>
+        <value>{0} only available for Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_error_unique_field_by_record</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field is unique by sibling</shortDescription>
+        <value>Value exists on another record</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_active_subscribers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Subscribers</shortDescription>
+        <value>Active Subscribers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_addressed_by_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Addressed By:</shortDescription>
+        <value>Addressed By:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_advanced_filters</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Advanced Filters</shortDescription>
+        <value>Advanced Filters</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_all_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Streamers</shortDescription>
+        <value>All Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_broadcast_status_live</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a Streamer is broadcasting</shortDescription>
+        <value>(Live)</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_channel_name</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Channel Name</shortDescription>
+        <value>Channel Name</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_currently_streaming</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Currently Streaming</shortDescription>
+        <value>Currently Streaming</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_date_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date:</shortDescription>
+        <value>Date:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_email_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email:</shortDescription>
+        <value>Email:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_access_record</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to interface when sObject errs on read</shortDescription>
+        <value>Error accessing {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_add_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot add Task</shortDescription>
+        <value>Cannot add Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_add_twitch_channel</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot add Twitch Channel</shortDescription>
+        <value>Cannot add Twitch Channel</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_add_alternate_owner</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot add Alternate Owner</shortDescription>
+        <value>Cannot add Alternate Owners</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_add_followup_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot add Followup Task</shortDescription>
+        <value>Cannot add Followup Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_add_twitter_direct_message</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot add Twitter DM</shortDescription>
+        <value>Cannot add Twitter DM</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_connect</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to interface when unable to connect to a service</shortDescription>
+        <value>Unable to connect to {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_connect_twitter</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unable to connect to Twitter</shortDescription>
+        <value>Unable to connect to Twitter</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_determine_record_access</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot determine record access</shortDescription>
+        <value>Cannot determine record access</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_alternate_owners</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Alternate Owners</shortDescription>
+        <value>Cannot display Alternate Owners</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_broadcast_status</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Broadcast Status</shortDescription>
+        <value>Cannot display Broadcast Status</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_cities</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Cities</shortDescription>
+        <value>Cannot display Cities</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_countries</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Countries</shortDescription>
+        <value>Cannot display Countries</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_gaming_events</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Gaming Events</shortDescription>
+        <value>Cannot display Gaming Events</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_mode_analytics</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Mode Analytics</shortDescription>
+        <value>Cannot display Mode Analytics</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_owner</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Owner</shortDescription>
+        <value>Cannot display Owner</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_partner_associate</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Partner Associate</shortDescription>
+        <value>Cannot display Partner Associate</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_partner_associates</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Partner Associates</shortDescription>
+        <value>Cannot display Partner Associates</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Streamers</shortDescription>
+        <value>Cannot display Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitch_channels</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitch Channels</shortDescription>
+        <value>Cannot display Twitch Channels</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitch_chat</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitch Chat</shortDescription>
+        <value>Cannot display Twitch Chat</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitch_stream</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitch Stream</shortDescription>
+        <value>Cannot display Twitch Stream</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitch_streams</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitch Streams</shortDescription>
+        <value>Cannot display Twitch Streams</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitter_conversations</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitter Conversations</shortDescription>
+        <value>Cannot display Twitter Conversations</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_twitter_direct_messages</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Twitter DMs</shortDescription>
+        <value>Cannot display Twitter DMs</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_display_unaddressed_infraction_count</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot display Unaddressed Infraction Count</shortDescription>
+        <value>Cannot display Unaddressed Infraction Count</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_find_list_view</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot find List View</shortDescription>
+        <value>Cannot find List View</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_load_my_partners_list</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot access list of My Partners</shortDescription>
+        <value>Cannot access list of My Partners</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_load_recently_partnered_list</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot access list of Recently Partnered Streamers</shortDescription>
+        <value>Cannot access list of Recently Partnered Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_load_twitter_preferences</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot access Twitter Preferences</shortDescription>
+        <value>Cannot access Twitter Preferences</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_load_unaddressed_infractions_list</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot access list of Unaddressed Infractions</shortDescription>
+        <value>Cannot access list of Unaddressed Infractions</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_load_upcoming_birthdays_list</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot access list of Upcoming Birthdays</shortDescription>
+        <value>Cannot access list of Upcoming Birthdays</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_remove_alternate_owner</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot remove Alternate Owner</shortDescription>
+        <value>Cannot remove Alternate Owners</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_remove_twitch_channel</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot remove Twitch Channel</shortDescription>
+        <value>Cannot remove Twitch Channel</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_cannot_update_twitter_preferences</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot update Twitter Preferences</shortDescription>
+        <value>Cannot update Twitter Preferences</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_create_record</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to interface when sObject errs on creation</shortDescription>
+        <value>Error creating {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_delete_record</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to interface when sObject errs on deletion</shortDescription>
+        <value>Error deleting {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_mode_analytics_only_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mode Analytics only available for Streamers</shortDescription>
+        <value>Mode Analytics only available for Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_retrieve_record</fullName>
+        <categories>interface,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to interface when sObject errs on retrieval</shortDescription>
+        <value>Error retrieving {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_twitch_chat_only_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Chat only available for Streamers</shortDescription>
+        <value>Twitch Chat only available for Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_error_twitch_live_channel_only_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Live Channel only available for Streamers</shortDescription>
+        <value>Twitch Live Channel only available for Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_followers_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Followers:</shortDescription>
+        <value>Followers:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_full_name</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_join_date</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Join Date</shortDescription>
+        <value>Join Date</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_last_tracked_activity_date</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last Tracked Activity</shortDescription>
+        <value>Last Tracked Activity</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_link_to_vods</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link to Twitch On-Demand Videos</shortDescription>
+        <value>Link to VODs</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_loading</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loading...</shortDescription>
+        <value>Loading...</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_log_record</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt logging of a record</shortDescription>
+        <value>Log {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_log_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt logging of a task</shortDescription>
+        <value>Log Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_maximum_number_subscribers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Maximum Number of Subscribers</shortDescription>
+        <value>Max. # of Subscribers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_minimum_number_subscribers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Minimum Number of Subscribers</shortDescription>
+        <value>Min. # of Subscribers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_my_live_streamers_count</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>My Live Streamers</shortDescription>
+        <value>My Live Streamers ({0})</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_my_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>My Streamers</shortDescription>
+        <value>My Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_no_current_gaming_events</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Notification to display when no Gaming Events exist for selection</shortDescription>
+        <value>No current Gaming Events exist</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_no_upcoming_birthdays</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No upcoming birthdays</shortDescription>
+        <value>No upcoming birthdays</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_number_followers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number of Followers</shortDescription>
+        <value>{0} followers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_number_subscribers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number of Subscribers</shortDescription>
+        <value>{0} subscribers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_number_viewers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number of Viewers</shortDescription>
+        <value>{0} viewers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_open_in_salesforce</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open in Salesforce</shortDescription>
+        <value>Open in Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_other_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other:</shortDescription>
+        <value>Other:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_partners_only</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partners Only</shortDescription>
+        <value>Partners Only</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_phone_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Phone:</shortDescription>
+        <value>Phone:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_preferred_contact_method</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Preferred Contact Method</shortDescription>
+        <value>Preferred Contact Method</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_recently_partnered_streamers</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Recently Partnered Streamers</shortDescription>
+        <value>Recently Partnered Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_schedule_followup_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt scheduling of a followup task</shortDescription>
+        <value>Schedule Followup Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_schedule_record</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt scheduling of a record</shortDescription>
+        <value>Schedule {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_skype_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Skype:</shortDescription>
+        <value>Skype:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_subscribers_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Subscribers:</shortDescription>
+        <value>Subscribers:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_take_ownership_explanation</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help text to promote taking ownership of unassigned Partners.</shortDescription>
+        <value>Please review the list below to take ownership of unassigned partners.</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_title_other_infractions</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other Infractions</shortDescription>
+        <value>Other Infractions</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_title_upcoming_birthdays</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upcoming Birthdays</shortDescription>
+        <value>Upcoming Birthdays</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_twitter_authentication_complete</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when authentication flow with Twitter finishes</shortDescription>
+        <value>Login complete! Close this window and click the Refresh button.</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_twitter_conversation_summary</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary of a Twitter Conversation</shortDescription>
+        <value>Twitter Conversation Summary</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_twitter_direct_message_label</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter DM:</shortDescription>
+        <value>Twitter DM:</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_twitter_direct_message_summary</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary of a Twitter Direct Message conversation</shortDescription>
+        <value>Twitter DM Summary</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_twitter_direct_messages_only</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Direct Messages Only</shortDescription>
+        <value>DMs Only</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_view_followup_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt viewing of a followup task</shortDescription>
+        <value>View Followup Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_view_more</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View More</shortDescription>
+        <value>View More</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_view_record</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt viewing of a record</shortDescription>
+        <value>View {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_view_task</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented to prompt viewing of a task</shortDescription>
+        <value>View Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_interface_view_unaddressed_infractions</fullName>
+        <categories>interface</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View Unaddressed Infractions</shortDescription>
+        <value>View Unaddressed Infractions ({0})</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_field_not_insertable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to insert an sObject field without permission.</shortDescription>
+        <value>You do not have permission to insert field {1} on {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_field_not_readable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to access an sObject field without permission.</shortDescription>
+        <value>You do not have permission to read the field {1} on {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_field_not_updateable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to update an sObject field without permission.</shortDescription>
+        <value>You do not have permission to update the field {1} on {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_object_not_deletable</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to delete an sObject without permission.</shortDescription>
+        <value>You do not have permission to delete {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_object_not_insertable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to insert an sObject without permission.</shortDescription>
+        <value>You do not have permission to insert {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_object_not_readable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error when attempting to access an sObject without permission.</shortDescription>
+        <value>You do not have permission to read {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_security_error_object_not_updateable</fullName>
+        <categories>security,error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error when attempting to update an sObject without permission.</shortDescription>
+        <value>You do not have permission to update {0}</value>
+    </labels>
+    <labels>
+        <fullName>pnr_success_save_followup_task</fullName>
+        <categories>success</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a Followup Task has been saved</shortDescription>
+        <value>Followup Task has been saved successfully</value>
+    </labels>
+    <labels>
+        <fullName>pnr_success_save_record</fullName>
+        <categories>success</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a record has been saved</shortDescription>
+        <value>{0} has been saved successfully</value>
+    </labels>
+    <labels>
+        <fullName>pnr_success_save_task</fullName>
+        <categories>success</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a Task has been saved</shortDescription>
+        <value>Task has been saved successfully</value>
+    </labels>
+    <labels>
+        <fullName>pnr_success_save_twitter_direct_message</fullName>
+        <categories>success</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a Twitter direct message has been saved</shortDescription>
+        <value>Twitter DM has been saved successfully</value>
+    </labels>
+    <labels>
+        <fullName>pnr_success_title</fullName>
+        <categories>success</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a successful action has completed</shortDescription>
+        <value>Success!</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_account_team</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the associates that manage a single Partner relationship</shortDescription>
+        <value>Account Team</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_broadcast_status</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Describes whether a stream is live or not</shortDescription>
+        <value>Broadcast Status</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_cities</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cities</shortDescription>
+        <value>Cities</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_city</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_countries</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Countries</shortDescription>
+        <value>Countries</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_country</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_date</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_followup_task</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Followup Task</shortDescription>
+        <value>Followup Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_gaming_event</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Gaming Event</shortDescription>
+        <value>Gaming Event</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_language</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Language</shortDescription>
+        <value>Language</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_mode_analytics</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mode Analytics</shortDescription>
+        <value>Mode Analytics</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_name_of_user</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the name of the a User</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_notes</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Notes</shortDescription>
+        <value>Notes</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_account_owner</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the name the owner of the relationships with a Partner</shortDescription>
+        <value>Owner</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_account_team</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the associates that manage a single Partner relationship</shortDescription>
+        <value>Account Team</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_account_team_member</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the name of the team members having a relationship with a Partner</shortDescription>
+        <value>Alternate Owner</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_account_team_members</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Represents the name of the team members having a relationship with a Partner</shortDescription>
+        <value>Alternate Owners</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_associate</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name for Twitch Employees who manage partner relationships</shortDescription>
+        <value>Partner Associate</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_partner_associates</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name for Twitch Employees who manage partner relationships</shortDescription>
+        <value>Partner Associates</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_streamer</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streamer</shortDescription>
+        <value>Streamer</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_streamers</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streamers</shortDescription>
+        <value>Streamers</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_subject</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_task</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task</shortDescription>
+        <value>Task</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitch_channel</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Channel</shortDescription>
+        <value>Twitch Channel</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitch_chat</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Chat</shortDescription>
+        <value>Twitch Chat</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitch_live_channel</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Live Channel</shortDescription>
+        <value>Twitch Live Channel</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitch_stream</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Stream</shortDescription>
+        <value>Twitch Stream</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitch_streams</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitch Streams</shortDescription>
+        <value>Twitch Streams</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter</shortDescription>
+        <value>Twitter</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter_conversation</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Conversation</shortDescription>
+        <value>Twitter Conversation</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter_conversations</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Conversations</shortDescription>
+        <value>Twitter Conversations</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter_direct_message</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Direct Message</shortDescription>
+        <value>Twitter DM</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter_direct_messages</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Direct Messages</shortDescription>
+        <value>Twitter DMs</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_twitter_preferences</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Preferences</shortDescription>
+        <value>Twitter Preferences</value>
+    </labels>
+    <labels>
+        <fullName>pnr_util_unaddressed_infraction_count</fullName>
+        <categories>util</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unaddressed Infraction Count</shortDescription>
+        <value>Unaddressed Infraction Count</value>
+    </labels>
+    <labels>
+        <fullName>pnr_validation_error_field_required</fullName>
+        <categories>validation,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Presented when a field is required to save an sObject</shortDescription>
+        <value>{0} required to save {1}</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,5 @@
+<design:component label="(PNR) Agreement Next Steps">
+    <sfdc:objects >
+        <sfdc:object >Apttus__APTS_Agreement__c</sfdc:object>
+    </sfdc:objects>
+</design:component>

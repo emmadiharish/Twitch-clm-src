@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>APTSMD_DynamicChevronController</members>
+        <members>PNR_AgreementActionsCtrl</members>
+        <members>PNR_AgreementActionsCtrlTest</members>
+        <members>PNR_AgreementChannelSelector</members>
+        <members>PNR_AgreementChannelSelector_Test</members>
+        <members>PNR_AgreementChannels</members>
+        <members>PNR_AgreementChannels_Test</members>
+        <members>PNR_AgreementController</members>
+        <members>PNR_AgreementController_Test</members>
+        <members>PNR_AgreementRevHistorySelector</members>
+        <members>PNR_AgreementRevHistorySelector_Test</members>
+        <members>PNR_AgreementRevisionHistory</members>
+        <members>PNR_AgreementRevisionHistory_Test</members>
+        <members>PNR_AgreementSelector</members>
+        <members>PNR_AgreementSelector_Test</members>
+        <members>PNR_AgreementService</members>
+        <members>PNR_AgreementService_Test</members>
+        <members>PNR_Agreements</members>
+        <members>PNR_Agreements_Test</members>
+        <members>PNR_OpportunitiesController</members>
+        <members>PNR_OpportunityService_Test</members>
+        <members>PNR_RelatedAgreementsSelector</members>
+        <members>PNR_SObjectDomain</members>
+        <members>PNR_SObjectDomain_Test</members>
+        <members>PNR_TestDataFactory</members>
+        <members>Twitch_AgreementTriggerHandler</members>
+        <members>Twitch_AgreementTriggerHandler_Test</members>
+        <members>Twitch_OpportunityTriggerHandler</members>
+        <members>Twitch_OpportunityTriggerHandler_Test</members>
+        <members>Twitch_RelatedAgreementHandler_Test</members>
+        <members>Twitch_RelatedAgreementTriggerHandler</members>
+        <members>Twitch_TestUtils</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>APTSMD_ProposalProcess2</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>APTSMD_AgreementStage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>PNR_AgreementChannelTrigger</members>
+        <members>PNR_AgreementTrigger</members>
+        <members>Twitch_AgreementTrigger</members>
+        <members>Twitch_OpportunityTrigger</members>
+        <members>Twitch_RelatedAgreementTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>PNR_AgreementActions</members>
+        <members>PNR_AgreementNextSteps</members>
+        <members>PNR_RelatedAgreements</members>
+        <members>PNR_SummaryChanges</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Opportunity.Partner Content Acquisition</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Apttus_Approval__Approval_Request__c.Approval_Actions__c</members>
+        <members>Opportunity.Agreement__c</members>
+        <members>Opportunity.CCV_of_YouTube_Live__c</members>
+        <members>Opportunity.Contract_Type__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>OpportunityStagesLookup.X1</members>
+        <members>OpportunityStagesLookup.X2</members>
+        <members>OpportunityStagesLookup.X3</members>
+        <members>OpportunityStagesLookup.X4</members>
+        <members>OpportunityStagesLookup.X5</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>AgreementChannel__c</members>
+        <members>AgreementSponsorship__c</members>
+        <members>Agreement_Rec__c</members>
+        <members>Agreement_Revision_History__c</members>
+        <members>Apttus__APTS_Agreement__c</members>
+        <members>Docusign_Agreement_Status__c</members>
+        <members>OpportunityStagesLookup__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>CanEditActiveAgreement</members>
+        <members>CanEditAgreementChannel</members>
+        <members>CanEditPendingApprovalAgreement</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>Apttus__ApttusEmailTemplates/Agreement_Effective_vs_Signature_Date_Day_Count</members>
+        <members>Apttus__ApttusEmailTemplates/Agreement_Fully_Executed_Notification</members>
+        <members>Apttus__ApttusEmailTemplates/Agreement_Renewal_Notification</members>
+        <members>Apttus__ApttusEmailTemplates/Approval_Request_Approved_Notification</members>
+        <members>Apttus__ApttusEmailTemplates/Approval_Request_Rejected_Notification</members>
+        <members>Apttus__ApttusEmailTemplates/ApttusAgreementApprovalAssignEmailCL</members>
+        <members>Apttus__ApttusEmailTemplates/ApttusAgreementApprovalCancelEmailCL</members>
+        <members>Apttus__ApttusEmailTemplates/ApttusAgreementApprovalEscalationEmailCL</members>
+        <members>Apttus__ApttusEmailTemplates/ApttusAgreementApprovalNotifyOnlyEmailCL</members>
+        <members>Apttus__ApttusEmailTemplates/ApttusAgreementApprovalReassignEmailCL</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Agreement_Record_Page</members>
+        <members>Approval_Rule_Record_Page</members>
+        <members>Document_Version_Record_Page</members>
+        <members>Document_Version_Record_Page1</members>
+        <members>Document_Version_Record_Page2</members>
+        <members>Opportunity_Record_Page</members>
+        <members>Template_Record_Page</members>
+        <members>Template_Record_Page1</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>AgreementChannel__c-Agreement Channel Layout</members>
+        <members>AgreementSponsorship__c-Agreement Sponsorship Layout</members>
+        <members>Agreement_Rec__c-Agreement Recipient Status Layout</members>
+        <members>Agreement_Revision_History__c-Agreement History Layout</members>
+        <members>Docusign_Agreement_Status__c-Docusign Agreement Status Layout</members>
+        <members>Opportunity-Limited Forecast Partner Acquisition Layout</members>
+        <members>Opportunity-Partner Content Acquisition Layout</members>
+        <members>Opportunity-Premium Partner Content Acquisition Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Twitch_Legal_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Opportunity.BD_Content_Generic</members>
+        <members>Opportunity.Co_branding_Marketing</members>
+        <members>Opportunity.Commerce</members>
+        <members>Opportunity.Distribution</members>
+        <members>Opportunity.Drops</members>
+        <members>Opportunity.Ecosystem</members>
+        <members>Opportunity.EsportsLicenseDeveloperPartnership</members>
+        <members>Opportunity.Extensions</members>
+        <members>Opportunity.Game_Integration</members>
+        <members>Opportunity.Mod</members>
+        <members>Opportunity.Partner_Content_Acquisition</members>
+        <members>Opportunity.Premium_Partner_Content_Acquisition</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Apttus__APTS_Agreement__c.Agreement_Legal_Edit</members>
+        <members>Apttus__APTS_Agreement__c.Share_with_Partnerships</members>
+        <name>SharingOwnerRule</name>
+    </types>
+    <types>
+        <members>OpportunityStage</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Apttus__APTS_Agreement__c.Agreement_120_Day_Renewal</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Approved_Request</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Effective_vs_Signature_Date_Day_Count</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Fully_Executed</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Rejected_Request</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Submitted_Request_Legal_Queue</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>Apttus__APTS_Agreement__c.Agreement_Approval_Status_Approval_Re</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Approval_Status_Approved</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Auto_Renew_Checked</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Fields_Needed_For_Approval</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Fully_Signed_Status</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Fully_Signed_Status_Category</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Int_Renewal_Notice_120_Days</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Internal_Signatures_Status</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Internal_Signatures_Status_C</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Non_Standard_Terms_Checked</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Other_Party_Sign_Status</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Other_Party_Sign_Status_Cate</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Renewal_Notice_90_Days</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Twitch_Counter_Signer</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Update_Agreement_End_Date</members>
+        <members>Apttus__APTS_Agreement__c.Agreement_Version_Aware_Checked</members>
+        <members>Apttus__APTS_Agreement__c.Status_Author_Contract</members>
+        <members>Apttus__APTS_Agreement__c.Status_Category_In_Authoring</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>Apttus__APTS_Agreement__c.Agreement - 120 Day Renewal</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Amended%2FRenewed Agreement</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Approval Status %27Approval Required%27</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Approved Finance Fields Changed</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Approved Request</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Effective vs Signature Date - Day Count</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Fields Needed For Approval - Content License</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Fully-Executed</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Fully-Signed</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Internal Signatures</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - NST - Content License</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Other Party Signatures</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Rejected Request</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Submitted Request Legal Queue</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Twitch Counter-Signer</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Update Agreement End Date</members>
+        <members>Apttus__APTS_Agreement__c.Agreement - Workflow Trigger Generated Agreement</members>
+        <name>WorkflowRule</name>
+    </types>
+    <version>44.0</version>
+</Package>

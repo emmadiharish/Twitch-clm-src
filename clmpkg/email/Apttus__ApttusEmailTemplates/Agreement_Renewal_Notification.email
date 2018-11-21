@@ -1,0 +1,9 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<style>p{margin-top:0px; margin-bottom:0px;}</style><p>The {!Apttus__APTS_Agreement__c.Name} agreement with {!Apttus__APTS_Agreement__c.Apttus__Account__c} will renew in 120 days.&nbsp; <br></p><p><br></p><p>Here are details of the record:<br>- Agreement Number 
+: {!Apttus__APTS_Agreement__c.Apttus__FF_Agreement_Number__c}<br>- Effective Date : 
+{!Apttus__APTS_Agreement__c.Apttus__Contract_Start_Date__c}<br></p><p>- End Date:&nbsp; {!Apttus__APTS_Agreement__c.Apttus__Contract_End_Date__c}<br></p><p>- Requestor : 
+{!Apttus__APTS_Agreement__c.Apttus__Requestor__c}</p><p>- Owner:&nbsp; {!Apttus__APTS_Agreement__c.OwnerFullName}<br></p><p>- Link:&nbsp; {!Apttus__APTS_Agreement__c.Link}</p>]]></td>
+</tr>
+</table>
